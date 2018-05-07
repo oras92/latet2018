@@ -189,3 +189,204 @@
 [27-Apr-2018 12:44:52 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 62
 [27-Apr-2018 12:44:52 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 62
 [27-Apr-2018 12:44:53 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 62
+[27-Apr-2018 16:49:39 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/shiranya/public_html/quickstart.php on line 9
+[27-Apr-2018 16:50:42 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/shiranya/public_html/quickstart.php on line 9
+[27-Apr-2018 17:06:25 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/shiranya/public_html/MyShift.php on line 58
+[27-Apr-2018 17:08:14 UTC] PHP Fatal error:  Call to undefined method Google_Client::loadServiceAccountJson() in /home/shiranya/public_html/MyShift.php on line 62
+[27-Apr-2018 17:11:18 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/shiranya/public_html/MyShift.php on line 92
+[27-Apr-2018 17:11:41 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/MyShift.php(61): Google_Client->setAuthConfig('client_secrets....')
+#1 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:12:36 UTC] PHP Parse error:  syntax error, unexpected 'next' (T_STRING) in /home/shiranya/public_html/MyShift.php on line 65
+[27-Apr-2018 17:13:09 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/MyShift.php(61): Google_Client->setAuthConfig('client_secrets....')
+#1 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:00 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:05 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:21 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:25 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:30 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:34 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:17:48 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:18:01 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:18:29 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:18:31 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:19:19 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:19:36 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php(834): Google_Client->setAuthConfig('client_secrets....')
+#1 /home/shiranya/public_html/oauth2callback.php(7): Google_Client->setAuthConfigFile('client_secrets....')
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[27-Apr-2018 17:38:44 UTC] PHP Fatal error:  Class 'Google_Client' not found in /home/shiranya/public_html/MyShift.php on line 64
+[27-Apr-2018 17:39:12 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/shiranya/public_html/MyShift.php on line 80
+[27-Apr-2018 17:39:12 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:183
+Stack trace:
+#0 /home/shiranya/public_html/MyShift.php(83): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/shiranya/public_html/MyShift.php(117): getClient()
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 183
+[28-Apr-2018 09:51:25 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 62
+[28-Apr-2018 09:56:06 UTC] PHP Catchable fatal error:  Argument 1 passed to Google_Service_Calendar::__construct() must be an instance of Google_Client, null given, called in /home/shiranya/public_html/Schedule.php on line 99 and defined in /home/shiranya/public_html/vendor/google/apiclient-services/src/Google/Service/Calendar.php on line 54
+[28-Apr-2018 09:56:21 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 62
+[28-Apr-2018 10:00:03 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'file does not exist' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:849
+Stack trace:
+#0 /home/shiranya/public_html/Schedule.php(49): Google_Client->setAuthConfig('client_secret.j...')
+#1 /home/shiranya/public_html/Schedule.php(98): getClient()
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 849
+[28-Apr-2018 10:05:26 UTC] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/shiranya/public_html/Schedule.php on line 61
+[28-Apr-2018 10:05:26 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid code' in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php:183
+Stack trace:
+#0 /home/shiranya/public_html/Schedule.php(64): Google_Client->fetchAccessTokenWithAuthCode('')
+#1 /home/shiranya/public_html/Schedule.php(98): getClient()
+#2 {main}
+  thrown in /home/shiranya/public_html/vendor/google/apiclient/src/Google/Client.php on line 183
+[28-Apr-2018 10:06:13 UTC] PHP Parse error:  syntax error, unexpected ''shift'' (T_CONSTANT_ENCAPSED_STRING) in /home/shiranya/public_html/MyReport.php on line 62
+[28-Apr-2018 10:06:49 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 63
+[28-Apr-2018 10:13:44 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 63
+[28-Apr-2018 10:19:37 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/shiranya/public_html/MyReport.php on line 73
+[28-Apr-2018 10:20:08 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 63
+[28-Apr-2018 10:20:12 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 63
+[28-Apr-2018 10:21:00 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 63
+[28-Apr-2018 10:35:58 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 10:36:30 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 10:37:23 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 10:37:25 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 10:40:51 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 10:42:51 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:43:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:43:13 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:43:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:43:22 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:43:23 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:44:09 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:44:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:44:45 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 10:44:47 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/test.php on line 40
+[28-Apr-2018 11:10:00 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:10:02 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:39 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:39 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:40 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:41 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:41 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:41 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:11:58 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 38
+[28-Apr-2018 11:12:32 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 31
+[28-Apr-2018 11:27:27 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/test.php on line 31
+[28-Apr-2018 11:33:09 UTC] PHP Parse error:  syntax error, unexpected 'MyShift' (T_STRING), expecting ',' or ';' in /home/shiranya/public_html/MyShift.php on line 56
+[28-Apr-2018 11:51:52 UTC] PHP Parse error:  syntax error, unexpected 'MyShift' (T_STRING), expecting ',' or ';' in /home/shiranya/public_html/MyShift.php on line 56
+[28-Apr-2018 14:37:59 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/MyReport.php on line 64
+[28-Apr-2018 14:38:41 UTC] PHP Fatal error:  Call to undefined function php_fuc() in /home/shiranya/public_html/MyReport.php on line 12
+[28-Apr-2018 14:38:45 UTC] PHP Fatal error:  Call to undefined function php_fuc() in /home/shiranya/public_html/MyReport.php on line 12
+[30-Apr-2018 21:16:49 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/shiranya/public_html/Personal_Profile.php on line 85
+[30-Apr-2018 21:16:51 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/shiranya/public_html/Personal_Profile.php on line 85
+[30-Apr-2018 21:21:00 UTC] PHP Fatal error:  Can't use function return value in write context in /home/shiranya/public_html/Personal_Profile.php on line 85
+[30-Apr-2018 21:21:39 UTC] PHP Fatal error:  Can't use function return value in write context in /home/shiranya/public_html/Personal_Profile.php on line 85
+[30-Apr-2018 21:21:44 UTC] PHP Fatal error:  Can't use function return value in write context in /home/shiranya/public_html/Personal_Profile.php on line 85
+[30-Apr-2018 21:22:26 UTC] PHP Fatal error:  Can't use function return value in write context in /home/shiranya/public_html/Personal_Profile.php on line 85
+[02-May-2018 07:41:01 UTC] PHP Fatal error:  Call to undefined function DAYNAME() in /home/shiranya/public_html/AddShift.php on line 41
+[02-May-2018 07:42:32 UTC] PHP Fatal error:  Call to undefined function DAYNAME() in /home/shiranya/public_html/AddShift.php on line 42
+[02-May-2018 07:43:39 UTC] PHP Fatal error:  Call to undefined function DAYNAME() in /home/shiranya/public_html/AddShift.php on line 42
+[02-May-2018 10:23:04 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:23:29 UTC] PHP Fatal error:  Call to a member function mysql_query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:24:16 UTC] PHP Fatal error:  Call to a member function mysql_query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:25:16 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:25:17 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:25:19 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:25:21 UTC] PHP Fatal error:  Call to a member function query() on null in /home/shiranya/public_html/AddShift.php on line 61
+[02-May-2018 10:27:19 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/shiranya/public_html/AddShift.php on line 123
+[02-May-2018 10:27:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/shiranya/public_html/AddShift.php on line 123
+[02-May-2018 10:27:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/shiranya/public_html/AddShift.php on line 123
+[03-May-2018 22:01:42 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/shiranya/public_html/index.php:72) in /home/shiranya/public_html/index.php on line 74
+[03-May-2018 22:01:42 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/shiranya/public_html/index.php:72) in /home/shiranya/public_html/index.php on line 74
+[06-May-2018 07:40:52 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 10:43:50 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 10:44:00 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 10:44:50 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 13:39:53 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 13:39:58 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 13:40:04 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:17:06 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:19:57 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 77
+[06-May-2018 16:19:58 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 77
+[06-May-2018 16:20:01 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 77
+[06-May-2018 16:20:52 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:20:58 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:21:23 UTC] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:21:49 UTC] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:21:50 UTC] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 16:21:50 UTC] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/shiranya/public_html/index.php on line 97
+[06-May-2018 22:13:10 UTC] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/shiranya/public_html/index.php on line 90
+[06-May-2018 22:13:10 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/shiranya/public_html/index.php on line 90
+[06-May-2018 22:13:10 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/shiranya/public_html/index.php on line 91
+[06-May-2018 22:14:12 UTC] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, string given in /home/shiranya/public_html/index.php on line 77
+[06-May-2018 22:27:45 UTC] PHP Warning:  mysql_set_charset() expects parameter 1 to be string, resource given in /home/shiranya/public_html/AddShift.php on line 75
+[06-May-2018 22:46:10 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/shiranya/public_html/AddShift.php on line 145
+[06-May-2018 22:46:30 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/shiranya/public_html/AddShift.php on line 97
+[06-May-2018 22:54:13 UTC] PHP Warning:  Illegal string offset 'Milgaie_Quantity' in /home/shiranya/public_html/AddShift.php on line 97

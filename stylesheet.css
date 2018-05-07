@@ -17,6 +17,7 @@ header {
 /* nav barי*/
 
 nav{
+    width: 70%;
     display: inline-block;
 }
 
@@ -46,8 +47,11 @@ a:hover, .dropdown-content a:hover{
     color: #ffff66;
 }
 
-logout{
-	    float: left;
+#logout{
+    width: 10%;
+    float: left;
+    padding-top: 65px;
+
 }
 
 /* nav bar- drop down- הדוחות שלי*/
@@ -58,9 +62,9 @@ logout{
 }
 
 .dropdown {
-        float: right;
+    float: right;
     padding: 10px 14px;
-        list-style-type: none;
+    list-style-type: none;
 }
 
 .dropdown-content {
@@ -178,4 +182,9 @@ th, td {
     text-align:center;
 }
 
-
+#storage, date, unstaffed {
+    padding: 30px;
+    display: none;
+    background-color: white;
+    text-align: center;
+}

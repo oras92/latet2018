@@ -94,6 +94,7 @@ if (isset($_POST['btn_log']))
     }
 }
 ob_end_flush();
+mysql_set_charset("utf8");
 ?>
 <form action="index.php" method="post">
   <div class="imgcontainer">

@@ -13,7 +13,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
-
+ mysqli_set_charset($conn, "utf8");
 ?>
 <head>
   		 <TITLE>Latet</TITLE>   
@@ -31,15 +31,21 @@ if ($conn->connect_error) {
 
 <body>
     <header>
-     <div class="logo">
-     <a href="home.html"> <img src="/img/copylatet.jpg" alt="latet"  width: 5px; height: 5px></a>
-       </div>
-       <nav> <ul id="navbar">
-             <li><a href="https://www.latet.org.il/">אתר לתת</a></li>
-             <li><a href=#>משמרות</a></li>
-             <li><a href=#>דוחות</a></li>
-             <li><a href=http://shiranya.mtacloud.co.il/Personal_Profile.html>פרופיל אישי</a></li>
-      </ul></nav>
+        <div class="logo">
+            <a href="home.html"><img src="/img/LOGO.jpeg" alt="latet" ;width="120" height="120"></a>
+        </div>
+        <nav>
+           <ul id="navbar">
+              <li><a href="http://shiranya.mtacloud.co.il/Personal_Profile.php">פרופיל אישי</a></li>
+              <li><a href="http://shiranya.mtacloud.co.il/Schedule.php"> קביעת משמרות</a></li>
+              <li><a href="http://shiranya.mtacloud.co.il/MyReport.php"> הדוחות שלי</a></li>
+              <li><a href="https://www.latet.org.il/">אתר לתת</a></li>
+    
+            </ul>
+        </nav>
+		<a id="logout" href="logout.php">התנתקות</a>
+
+
             <?php
                $sql = "select * from Users where username ='" .$_SESSION['username'] ."'";
                 $result = $conn->query($sql);
@@ -75,11 +81,18 @@ if ($conn->connect_error) {
                ?> 
                <br/><br/>
                תגים:
+               <?php
+               if(date("n") == $row['Tag']){
+                   echo "מתנדב חודש". " ". $row['Tag'];
+                   echo "<img src='/img/tag.jpg'>";
+               }
+               
+               ?>
           </section>
           <section class="Shift_Schedule">
-      <a href="http://shiranya.mtacloud.co.il/Schedule.html"><i style="font-size:20px" class="fa">&#xf073;</i>  לוז קבוע ומשתנה</a>
-             <a href="#"> <i style="font-size:20px"class="fa">&#xf271;</i> שינוי לוז</a>
-             <a href="#"><i style="font-size:20px" class="fa">&#xf02e;</i>המשמרות שלי</a>
+      <a href="Schedule.php"><i style="font-size:20px" class="fa">&#xf073;</i>  לוז קבוע ומשתנה</a>
+             <a href="Schedule.php"> <i style="font-size:20px"class="fa">&#xf271;</i> שינוי לוז</a>
+             <a href="MyShift.php"><i style="font-size:20px" class="fa">&#xf02e;</i>המשמרות שלי</a>
              <a href="#"> <i style="font-size:20px" class="fa">&#xf0f3;</i> ההתראות שלי</a>
           </section>
       </main>
