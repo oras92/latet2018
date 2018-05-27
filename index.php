@@ -4,6 +4,7 @@
 <title> לתת </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;width: 70%;margin:0px auto; }
 form {border: 3px solid #f1f1f1;}
@@ -72,6 +73,18 @@ span.psw {
 <?php
 ob_start();
 session_start();
+$servername = "zebra.mtacloud.co.il";
+$username = "shiranya";
+$password = "latet";
+$dbname = "shiranya_Latet2018";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+}
+
 $_SESSION['username']=$_POST['username'];
 mysql_connect("Localhost","shiranya_adte03","adte1205") or die ("No Connection");
 mysql_select_db("shiranya_Latet2018") or die ("No Database Name");
@@ -89,11 +102,22 @@ if (isset($_POST['btn_log']))
         $Pass=($_POST['password']);
         $sql=mysql_query("SELECT * FROM Users WHERE username='$Uname' AND password='$Pass'");
         $cout=mysql_num_rows($sql);
-        if ($cout > 0)
-        header ('location:home.html');
+        $result = mysqli_query($conn,"SELECT * FROM Users WHERE username='$Uname' AND password='$Pass'");
+        if($result -> num_rows >0) {
+            $row = $result->fetch_assoc();
+            if ($cout > 0){
+                if($row['Job'] == "admin"){
+                    header ('location:home_admin.php'); 
+                }
+                else{
+                    header ('location:home.html');
+                }
+            }
+        }
     }
 }
 ob_end_flush();
+mysql_set_charset("utf8");
 ?>
 <form action="index.php" method="post">
   <div class="imgcontainer">
@@ -114,4 +138,5 @@ ob_end_flush();
   </div>
 </form>
 </body>
+
 </html>
