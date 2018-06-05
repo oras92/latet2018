@@ -15,17 +15,15 @@
         mysqli_set_charset($conn,"utf8");
         $_SESSION['Test']=$_POST['Shift_Date'];
         ?>
-  <html dir="rtl">
+ <html dir="rtl">
     <head>
-  		 <title>Latet</title>   
-  		 <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-  		 <link rel="stylesheet" type="text/css" href= "stylesheet.css">
-		  <link rel="stylesheet" type="text/css" href= "bootstrap.css">
-		  
-  		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	
-</head>
+  		<title>Latet</title>   
+  		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" type="text/css" href= "stylesheet.css">
+		<link rel="stylesheet" type="text/css" href= "bootstrap.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
     <style>
     table {
         width:60%;
@@ -194,9 +192,10 @@
                                     else if($Num_Registered_Quantity=$row2['Milgaie_Quantity'])
                                         {
                                         echo "<script>
-                                        if(confirm('Do you want to add waiting list')==true)
+                                        if(confirm('המשמרת שבחרת מלאה, האם תרצה להכנס לרשימת ההמתנה?')==true)
                                         {
-                                            window.location.href('WaitingList.php' +'?Uname=$Uname&ShiftId=$Shift_Id');
+                                            link='WaitingList.php' +'?Uname=$Uname&ShiftId=$Shift_Id';
+                                            window.location.href=link;
                                         }
                                         </script>";
                                         }
@@ -238,6 +237,29 @@
                                         mysql_query("UPDATE `Shifts` SET `Registered_Quantity`='$Num_Registered_Quantity'-1 WHERE Shift_Id='$Shift_Id'");
     
                                         echo "השיבוץ נמחק בהצלחה";
+                                        $res = mysqli_query($conn,"SELECT User_Id FROM Waiting_List WHERE Shift_Id='$Shift_Id'");
+                            while ($row = mysqli_fetch_array($res)) {
+                                    $UsName=$row['User_Id'];
+                                    $res1 = mysqli_query($conn,"SELECT Email FROM Users WHERE username='$UsName'");
+                                    $row1 = mysqli_fetch_array($res1);
+                                    $email = $row1['Email'];
+                                    $mail2 = new PHPMailer();
+                                	$mail2->Host = "smtp.gmail.com";
+                                	$mail2->SMTPSecure = "ssl";
+                                	$mail2->Port = 465;
+                                	$mail2->SMTPAuth = true;
+                                	$mail2->Username = 'mtalatet@gmail.com';
+                                	$mail2->Password = 'mtalatet2018';	
+                                	$mail2->setFrom('mtalatet@gmail.com', 'latet');
+                                	$mail2->addAddress($email);//להכניס את הכתובת ששלפתם מהדאטהבייס
+                                	$mail2->Subject = "Latet Replacment System";
+                                	$mail2->Body = "הנך רשום/ה לרשימת המתנה עבור קוד משמרת $Shift_Id /nהתבצעה פעולה של מחיקת שיבוצים על ידי מתנדבים אחרים /nהנך מוזמן/ת להירשם למשמרת זו דרך הקישןר מטה /nshiranya.mtacloud.co.il/Althome.php";
+                                	if ($mail2->send()){
+                                        echo "";                                  
+                                        }
+                                    else
+                                        echo 'mailer error: '. $mail->ErrorInfo;
+                            } 
                                     }
                                     else 
                                     {
@@ -245,31 +267,7 @@
                                     }
                                 }
                             }
-                            /* 
-                            $res = mysqli_query($conn,"SELECT User_Id FROM Waiting_List WHERE Shift_Id='$Shift_Id'");
-                            while ($row = mysqli_fetch_array($res)) {
-                                echo $res['User_Id'];
-                            }
-                            echo $res->num_rows;
-                            if($Res->num_rows>0)
-                            {
-                              while($Row=$Res->fetch_assoc()){
-                                    $SqlUser= "SELECT Email From Users WHERE username= $Row['User_Id'] ";
-                                    $email = $RowUsers['Email'];
-                                    $UserName =$RowUsers['FirstName'];
-                                    $mail = new PHPMailer();
-                                	$mail->Host = "smtp.gmail.com";
-                                	$mail->SMTPSecure = "ssl";
-                                	$mail->Port = 465;
-                                	$mail->SMTPAuth = true;
-                                	$mail->Username = 'mtalatet@gmail.com';
-                                	$mail->Password = 'mtalatet2018';	
-                                	$mail->setFrom('mtalatet@gmail.com', 'latet');
-                                	$mail->addAddress($email);//להכניס את הכתובת ששלפתם מהדאטהבייס
-                                	$mail->Subject = "Latet Replacment System";
-                                	$mail->Body = "" ;
-                                } 
-                            }*/
+                           
                 ?>
         				
 </div>		

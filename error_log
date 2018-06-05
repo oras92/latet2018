@@ -627,3 +627,12 @@ Stack trace:
 [28-May-2018 15:18:31 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/shiranya/public_html/AddShift.php on line 249
 [28-May-2018 15:18:54 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/shiranya/public_html/AddShift.php on line 249
 [28-May-2018 15:19:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/shiranya/public_html/AddShift.php on line 249
+[30-May-2018 22:15:21 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/shiranya/public_html/AddShift.php on line 251
+[30-May-2018 22:29:29 UTC] PHP Fatal error:  Call to a member function send() on null in /home/shiranya/public_html/AddShift.php on line 267
+[30-May-2018 23:01:57 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/shiranya/public_html/AddShift.php on line 259
+[31-May-2018 13:46:19 UTC] PHP Fatal error:  Call to a member function send() on null in /home/shiranya/public_html/WaitingList.php on line 139
+[31-May-2018 13:57:59 UTC] PHP Fatal error:  Call to a member function send() on null in /home/shiranya/public_html/WaitingList.php on line 139
+[31-May-2018 14:08:38 UTC] PHP Fatal error:  Call to a member function send() on null in /home/shiranya/public_html/WaitingList.php on line 139
+[31-May-2018 14:10:33 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/WaitingList.php on line 143
+[31-May-2018 14:10:35 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/shiranya/public_html/WaitingList.php on line 143
+[31-May-2018 19:11:24 UTC] PHP Catchable fatal error:  Object of class PHPMailer could not be converted to string in /home/shiranya/public_html/WaitingList.php on line 147

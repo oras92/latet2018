@@ -91,7 +91,7 @@ require 'phpmailer/PHPMailerAutoload.php';
         $FirstDayOfWeek=date('Y-m-d', strtotime($Shift_Date1['Shift_Date']. ' - '. $less. 'days'));
         $EndtDayOfWeek=date('Y-m-d', strtotime($Shift_Date1['Shift_Date']. ' + '. $more. 'days'));
         
-        echo "start:" . $FirstDayOfWeek . " end" .$EndtDayOfWeek. "<br/>";
+        //echo "start:" . $FirstDayOfWeek . " end" .$EndtDayOfWeek. "<br/>";
         
         $SqlRegisterVol="SELECT * FROM assignments WHERE Shift_id='$Shift_Id'"; //sql
         $ResRegisterVol = $conn->query($SqlRegisterVol); // result
@@ -108,6 +108,7 @@ require 'phpmailer/PHPMailerAutoload.php';
                 while ($RowRegisterVol = $ResRegisterVol->fetch_assoc()){
                         $DayOfWeek = 1+ date('w', strtotime($RowShiftsAvailables['Shift_Date']));
                         $User_id=$RowRegisterVol['User_Id'] ;
+                        echo "<br/> ".$User_id;
                         $SqlRoutine="SELECT Routine From Personal_Constraint WHERE User_Id= '".$RowRegisterVol['User_Id']."' AND Day= '".$DayOfWeek."' ";
                         $ResRoutine = $conn->query($SqlRoutine);
                         $RowRoutine = $ResRoutine->fetch_assoc();
@@ -127,7 +128,18 @@ require 'phpmailer/PHPMailerAutoload.php';
                         	$mail->setFrom('mtalatet@gmail.com', 'latet');
                         	$mail->addAddress($email);//להכניס את הכתובת ששלפתם מהדאטהבייס
                         	$mail->Subject = "Latet Replacment System";
-                        	$mail->Body = "שלום $UserName \nמתנדב נוסף מעוניין במשמרת אליה נרשמת\nלאחר בדיקה של המערכת ישנם השבוע משמרות נוספות השבוע אליהן תוכל/י להשתבץ\nקוד המשמרת אליה אתה רשום הוא :$Shift_Id \nלשינוי השיבוץ, אנא לחץ על הקישור מטה \n shiranya.mtacloud.co.il/Althome.php" ;
+                        	$mail->Body =
+                        	"שלום $UserName 
+                        	מתנדב נוסף מעוניין במשמרת אליה נרשמת
+                        	לאחר בדיקה של המערכת ישנן באותו השבוע משמרות נוספות השבוע אליהן תוכל/י להשתבץ
+                        	קוד המשמרת אליה אתה רשום הוא :$Shift_Id 
+                        	לשינוי השיבוץ, אנא לחץ על הקישור מטה
+                        	shiranya.mtacloud.co.il/Althome.php" ;
+                        	
+                            if ($mail <> ""){
+                            $mail->send();
+                            $AtLeast1Send = true;
+                            }
                     }
                 }     
             }
@@ -136,16 +148,20 @@ require 'phpmailer/PHPMailerAutoload.php';
     <div>
         <h2> נוספת בהצלחה לרשימת המתנה עבור קוד משמרת  <?php echo $Shift_Id; ?>  </h2
         <?php 
-            if ($mail->send()){
+        if($AtLeast1Send)
+        {
             echo "<br/> נשלחה בקשה להחלפת המשמרת <br/>";
             echo "במידה ואחד המתנדבים הרשומים יסכים לשינוי יישלח אלייך מייל בנושא";
-            }
-            else
-            echo 'mailer error: '. $mail->ErrorInfo;
+        }
+        else
+        {
+            echo "<br/> כרגע אין מתנדבים אליהם אפשר לשלוח בקשת החלפה <br/>";
+        }
         ?>
         <!-- הוסיף לדף זה גם תאריך ויום של המשמרת-->
     </div>
-    <a href="http://shiranya.mtacloud.co.il/AddShift.php" style="background-color:blue; width:30%"> לחזרה לעמוד קביעת משמרות</a>
+    <br><br>
+    <a href="http://shiranya.mtacloud.co.il/AddShift.php" style="color:#14BBB1;margin-bottom:30px"> לחזרה לעמוד קביעת משמרות</a>
     </body>
 </div>
 </html>
